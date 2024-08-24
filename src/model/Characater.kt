@@ -39,4 +39,10 @@ class Character(var attributes: MutableMap<String, Int>, val race: Race) {
             }
         }
     }
+
+    fun calculateHealthPoints(): Int {
+        val constitution = attributes["Constitution"] ?: 0
+        val constitutionModifier = (constitution - 10) / 2
+        return 10 + constitutionModifier
+    }
 }
