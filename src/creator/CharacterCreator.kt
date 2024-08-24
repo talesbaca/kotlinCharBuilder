@@ -1,8 +1,8 @@
-package strategy
+package creator
 
 import model.Character
 import model.Race
 
-interface CharacterCreationStrategy {
+interface CharacterCreator {
     fun createCharacter(race: Race): Character
 }

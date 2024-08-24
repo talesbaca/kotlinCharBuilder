@@ -1,9 +1,9 @@
-package strategy
+package creator
 
 import model.Character
 import model.Race
 
-class DefaultCharacterCreationStrategy : CharacterCreationStrategy {
+class DefaultCharacterCreator : CharacterCreator {
     override fun createCharacter(race: Race): Character {
         val attributes = mutableMapOf(
             "Força" to 8,

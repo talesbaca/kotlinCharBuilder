@@ -1,8 +1,8 @@
 package main
 
 import model.*
-import strategy.CharacterCreationStrategy
-import strategy.DefaultCharacterCreationStrategy
+import creator.CharacterCreator
+import creator.DefaultCharacterCreator
 
 fun main() {
     val races = mapOf(
@@ -23,8 +23,8 @@ fun main() {
     }
 
     val race = races[selectedRace]!!
-    val strategy: CharacterCreationStrategy = DefaultCharacterCreationStrategy()
-    val character = strategy.createCharacter(race)
+    val creator: CharacterCreator = DefaultCharacterCreator()
+    val character = creator.createCharacter(race)
 
     println("Atributos com aplicação de bônus de raça:")
     character.attributes.forEach { (attr, value) ->
