@@ -1,5 +1,5 @@
 package model
 
 class Elf : Race("Elfo", mapOf(
-    "Dexterity" to 2
+    "Destreza" to 2
 ))
