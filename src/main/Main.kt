@@ -9,7 +9,8 @@ fun main() {
         "Humano" to Human(),
         "Elfo" to Elf(),
         "Anão" to Dwarf(),
-        "Halfling" to Halfling()
+        "Halfling" to Halfling(),
+        "Draconato" to Dragonborn()
     )
 
     println("Selecione a raça:")
