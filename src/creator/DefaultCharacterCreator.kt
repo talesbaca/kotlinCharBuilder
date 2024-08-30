@@ -15,10 +15,12 @@ class DefaultCharacterCreator : CharacterCreator {
         )
 
         val character = Character(attributes, race)
-        character.applyRaceBonuses()
 
         val points = 27
         character.distributePoints(points)
+
+        println("Pontos distribuidos! Vamos aplicar o seu bônus de raça....")
+        character.applyRaceBonuses()
 
         return character
     }

@@ -16,7 +16,7 @@ class Character(var attributes: MutableMap<String, Int>, val race: Race) {
                 println("$attr: $value")
             }
 
-            println("Informe o atributo que desja aumentar:")
+            println("Informe o atributo que deseja aumentar:")
             val attribute = readLine()?.capitalize() ?: ""
             if (!attributes.containsKey(attribute)) {
                 println("Atributo não existe.")
